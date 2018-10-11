@@ -1,0 +1,251 @@
+h1, h2, h3, h4, p, a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 4px auto;
+       height: 0;
+       width: 50%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 0.5px solid #aaaaaa;
+    }
+
+.headline h1, .headline div {
+    display: inline;
+	line-height: 4em;
+    font-size: 16px;      
+}
+
+#links{
+	margin-top: 2em;
+}
+.headline h1 {
+    font-weight: bold;
+	font-size: 32px;
+	padding-left: 2em;	
+	display: block;
+	margin: 0;	
+}
+
+.headline div{
+	float: right;
+	padding-right: 2em;
+}
+
+.headline{
+	height: 8em;
+	background: white;
+}
+
+.bigPhoneContainer{
+	height: 37em;
+	background: linear-gradient(90deg, #fbcf62 50%, #f3c95d 50%);
+	position: relative;
+    text-align: center;
+}
+
+
+.bigPhoneContainer img{
+	margin: auto;
+	padding-top: 2em;
+	position: absolute;
+
+}
+
+.phoneInfo {
+	margin: auto;
+	padding-right: 35em;
+	padding-top: 10em;
+}
+
+
+.phoneInfo h1, h2{
+	font-size: 80px;
+	font-weight: bold;
+	margin: 0;
+	
+}
+.phoneInfo h1{
+	color: gray;	
+}
+.phoneInfo h2{
+	color: white;	
+	text-align: left;
+}
+.phoneInfo p{
+	text-align: left;
+}
+.textBox{
+	width: 35em;
+	margin: auto;
+}
+
+.bigPhoneContainer:after {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #fbcf62;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.about{
+	background: rgb(52, 52, 52);
+	height: 40em;
+}
+
+.about h1, p{
+	margin: 0;
+	padding-top: 2em;
+	text-align: center;
+}
+
+.about h1{
+	color: white;
+}
+.about p {
+	color: rgb(164, 164, 164);
+}
+
+.figures{
+	width: 75%;
+	max-width: 1400px; 
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+figure{
+	display: inline-block;	
+	background: rgb(62, 62, 62);
+	width: 400px;
+	text-align: center;
+	padding-left:1em;
+	padding-right: 1em;
+	border-style: solid;
+	border-width: 0;
+
+}
+
+#fig1{
+	border-bottom-width: 0.5em;
+	border-bottom-color: #FCCF6B;
+}
+#fig2{
+	border-bottom-width: 0.5em;
+	border-bottom-color: #FF6F70;
+}
+#fig3{
+	border-bottom-width: 0.5em;
+	border-bottom-color: #A3D16B;
+}
+
+figure h1{
+	color: white;
+}
+figure p {
+	color: rgb(164, 164, 164);
+	margin-bottom: 1em;
+}
+
+.aboutIm{
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+
+.quote{
+	text-align: center;
+	background: #FF6F70;
+	height: 24em;
+	position: relative;
+}
+
+.quote h1{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 52px;
+	color:rgb(52, 52, 52);;
+}
+
+.quote h2{
+	display: inline;
+	color: white;
+	font-size: 32px;
+}
+.quote h3{
+	display: inline;
+	font-size: 64px;
+	color: white;
+    font-family: 'Noto Serif', serif;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.quote:after {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #FF6F70;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.team{
+	text-align: center;
+	background: #292929;
+	height: 48em;
+}
+
+.team h1{
+	padding: 0;
+	margin: 0;
+	color: white;
+	padding-top: 2em;
+	font-size: 48px;
+}
+
+.team p{
+	color: rgb(164, 164, 164);
+	padding-bottom: 1em;
+}
+
+.team figure img{
+	border-radius: 5px;
+}
+.team figure h1{
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-size: 24px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.team figure p{
+	padding: 0;
+}
