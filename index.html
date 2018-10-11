@@ -5,34 +5,36 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 <meta charset="UTF-8">
+<title>CMP1130M</title>
 </head>
 
 <body>
 	<header class = "headline">
 		
 		<div id = "links">
-			<a href = "">Home</a>
-			<a href = "">About</a>
-			<a href = "">Portfolio</a>
-			<a href = "">Blog</a>
-			<a href = "">Contact</a>
+			<a href = "#bigPhoneContainer">Home</a>
+			<a href = "#about">About</a>
+			<a href = "#quote">Quote</a>
+			<a href = "#team">Contacts</a>
+			<a href = "#mapTop" class = "last">Map</a>
 		</div>
 		<h1 id = "title"> CMP1130M</h1>
 	</header>
 
-	<section class = "bigPhoneContainer">
-		<img src = "IMAGES/white phone.png">
-		
-		<section class = "phoneInfo">
-			<div class = "textBox">
-				<h1> EVERYTHING </h1>
-				<h2> YOU NEED </h2> 	
-				<p> To understand HTML5 and CSS3 styling. (In Theory) Web Auth CMP110M - Work in progress!</p>			
-			</div>			
-		</section>		
+	<section id = "bigPhoneContainer">
+		<div class = "phoneTextCombo">					
+			<div class = "phoneInfo">
+				<div class = "textBox">
+					<h1> EVERYTHING </h1>
+					<h2> YOU NEED </h2> 	
+					<p> To understand HTML5 and CSS3 styling. (In Theory) Web Auth CMP110M - Work in progress!</p>			
+				</div>			
+			</div>		
+			<img src = "IMAGES/white phone.png">
+		</div>
 	</section>
 	
-	<section class = "about">	
+	<section id = "about">	
 		<div class = "textBox">
 			<h1> ABOUT US </h1>
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur semper porta. Sed blandit ipsum nec odio bibendum molestie. </p> 	
@@ -62,7 +64,7 @@
 		</div>
 	</section>
 
-	<section class = "quote">		
+	<section id = "quote">		
 		<div id = "spacer" style="padding-top: 6em;"></div>
 		<h3>“</h3>
 		<h1>Design to express,</h1>
@@ -74,7 +76,7 @@
 
 	</section>
 
-	<section class = "team">
+	<section id = "team">
 		<div class = "textBox">
 			<h1>MEET THE TEAM</h1>
 			<p>A pround group of individuals who came together in a perfect unity to present you with this</p>
@@ -107,6 +109,84 @@
 
 		</div>
 	</section>
+	<section class = "facts">		
+		<div class = "figures">
+			<figure id = "fig2">
+				<img class = "aboutIm" src = "IMAGES/FACE.png">	
+				<h1> 2500 </h1>
+				<p>HAPPY CLIENTS</p>
+			</figure>
+			
+			<figure id = "fig2">
+				<img class = "aboutIm" src = "IMAGES/LIGHTBULB.png">
+				<h1> 650 </h1>
+				<p>PROJECTS MADE</p>
+			</figure>
+			
+			<figure id = "fig2">
+				<img  class = "aboutIm" src = "IMAGES/PLANE.png">
+				<h1> 5780 </h1>
+				<p>LETTERS SENT</p>
+			</figure>
 
+			<figure id = "fig2">
+				<img  class = "aboutIm" src = "IMAGES/PENCIL.png">	
+				<h1> 3400 </h1>
+				<p>BRIEFS WROTE</p>
+			</figure>
+		</div>
+	</section>
+
+	<section class = "portfolioTop">
+		<div class = "textBox">
+			<h1>OUR PORTFOLIO</h1>
+			<p>Lorem ipsum dolor sit amet, lobortis consequat gravida, vestibulum phasellus.</p>
+			<hr>
+		</div>
+	</section>
+	<section class = "portfolio">
+		<div class = "projects">
+			<figure class = "yellow"></figure>			
+			<figure class = "red"></figure>
+			<figure class = "yellow"></figure>			
+			<figure class = "red"></figure>
+		</div>
+		<div class = "comments" >
+			<figure class = "arrow" ><p>KOPAZITO</p></figure>			
+			<figure class = "arrow" ><p>I LOVE PICKLES</p></figure>
+			<figure class = "arrow" ><p>SHOTMENT</p></figure>
+			<figure class = "arrow" ><p>VOODOO</p></figure>
+		</div>
+		<div class = "projects">
+			<figure class = "red"></figure>			
+			<figure class = "yellow"></figure>
+			<figure class = "red"></figure>			
+			<figure class = "yellow"></figure>
+		</div>
+		<div class = "comments" >
+			<figure class = "arrow" ><p>BARBAPAPA</p></figure>			
+			<figure class = "arrow" ><p>RON WEASLEY</p></figure>
+			<figure class = "arrow" ><p>MY DIAMOND RETURNS!</p></figure>
+			<figure class = "arrow" ><p>I CAN PAY MY BILLS</p></figure>
+		</div>
+	</section>
+
+	<section class = "video">
+		 <video controls>
+		  <source src="IMAGES/SampleVideo.mp4" type="video/mp4">	
+			Your browser does not support the video tag.
+		</video> 		
+	</section>
+
+	<section id = "mapTop">
+		<div style="width: 40em; margin: auto;">
+			<h2> Web Auth CMP1130M </h2>
+			<h1> We love HTML & CSS </h1>
+			<h3> Brayford Way, Brayford Pool, Lincoln LN6 7TS </h3>
+		</div>
+	</section>
+	<section class = "map">
+		<img src = "IMAGES/MAP.png">
+	</section>
 </body>
 </html>

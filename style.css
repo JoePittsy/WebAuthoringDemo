@@ -2,6 +2,18 @@ h1, h2, h3, h4, p, a{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none !important;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: none;
+    border-right: 0.5px solid #aaaaaa;
+    color: inherit;
+}
+.last{
+	border: none;
+}
+
 body {
    margin: 0;
    padding: 0;
@@ -49,7 +61,7 @@ hr {
 	background: white;
 }
 
-.bigPhoneContainer{
+#bigPhoneContainer{
 	height: 37em;
 	background: linear-gradient(90deg, #fbcf62 50%, #f3c95d 50%);
 	position: relative;
@@ -57,20 +69,23 @@ hr {
 }
 
 
-.bigPhoneContainer img{
-	margin: auto;
+.phoneTextCombo{
+	display: flex;
+	justify-content: center;
+}
+
+
+.phoneTextCombo img{
+	float: right;
+	padding-left: 2em;
 	padding-top: 2em;
-	position: absolute;
-
 }
 
-.phoneInfo {
-	margin: auto;
-	padding-right: 35em;
-	padding-top: 10em;
+.phoneInfo{
+	float: right;
+	padding-top: 8em;
+	padding-left: 2em;
 }
-
-
 .phoneInfo h1, h2{
 	font-size: 80px;
 	font-weight: bold;
@@ -92,35 +107,52 @@ hr {
 	margin: auto;
 }
 
-.bigPhoneContainer:after {
+
+#bigPhoneContainer:before {
 	top: 100%;	
 	left: 50%;
 	border: solid transparent;
-	content: " ";
+	content: "";
 	height: 0;
 	width: 0;
 	position: absolute;
 	pointer-events: none;
 	border-top-color: #fbcf62;
+	border-right: none;
 	border-width: 30px;
 	margin-left: -30px;
 }
 
-.about{
+#bigPhoneContainer:after {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #F3C95D;
+	border-left: none;
+	border-width: 30px;
+}
+
+
+#about{
 	background: rgb(52, 52, 52);
 	height: 40em;
 }
 
-.about h1, p{
+#about h1, p{
 	margin: 0;
 	padding-top: 2em;
 	text-align: center;
 }
 
-.about h1{
+#about h1{
 	color: white;
 }
-.about p {
+#about p {
 	color: rgb(164, 164, 164);
 }
 
@@ -171,14 +203,14 @@ figure p {
 }
 
 
-.quote{
+#quote{
 	text-align: center;
 	background: #FF6F70;
 	height: 24em;
 	position: relative;
 }
 
-.quote h1{
+#quote h1{
 	display: inline;
 	margin: 0;
 	padding: 0;
@@ -186,12 +218,12 @@ figure p {
 	color:rgb(52, 52, 52);;
 }
 
-.quote h2{
+#quote h2{
 	display: inline;
 	color: white;
 	font-size: 32px;
 }
-.quote h3{
+#quote h3{
 	display: inline;
 	font-size: 64px;
 	color: white;
@@ -202,7 +234,7 @@ figure p {
     padding-right: 0.5em;
 }
 
-.quote:after {
+#quote:after {
 	top: 100%;	
 	left: 50%;
 	border: solid transparent;
@@ -216,13 +248,13 @@ figure p {
 	margin-left: -30px;
 }
 
-.team{
+#team{
 	text-align: center;
 	background: #292929;
 	height: 48em;
 }
 
-.team h1{
+#team h1{
 	padding: 0;
 	margin: 0;
 	color: white;
@@ -230,15 +262,17 @@ figure p {
 	font-size: 48px;
 }
 
-.team p{
+#team p{
 	color: rgb(164, 164, 164);
 	padding-bottom: 1em;
 }
-
-.team figure img{
+#team hr{
+	padding-bottom: 4em;
+}
+#team figure img{
 	border-radius: 5px;
 }
-.team figure h1{
+#team figure h1{
 	padding: 0;
 	margin: 0;
 	color: white;
@@ -246,6 +280,212 @@ figure p {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-.team figure p{
+#team figure p{
 	padding: 0;
+}
+
+.facts{
+	background:	linear-gradient(90deg, #A3D16B 50%, #A0C968 50%);
+	height: 32em;
+	position: relative;
+}
+
+.facts:before {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #A3D16B;
+	border-right: none;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.facts:after {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #A0C968;
+	border-left: none;
+	border-width: 30px;
+}
+
+.facts figure{
+	background: none;
+	border: none;
+	padding-top: 4em;
+}
+
+.facts figure h1{
+	color: #292929;
+	font-size: 48px;
+	padding:0;
+	margin: 0;
+	font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.facts figure p{
+	margin: 0;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	border: solid;
+	border-color: white;
+	border-width: 4px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #292929;
+}
+
+.portfolioTop{
+	text-align: center;
+	background: #373737;
+	height: 14em;
+}
+
+.portfolioTop h1{
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+	font-size: 48px;
+	color: white;
+}
+.portfolioTop p{
+	color: rgb(164, 164, 164);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.projects{	
+	display: flex;
+}
+
+.portfolio figure{
+	margin:0;
+	display: inline-block;	
+	width: 100%;
+	height: 15em;
+	text-align: center;
+	padding-left:0;
+	padding-right: 0;
+	position: relative;
+
+}
+
+.arrow{
+	height: 5em !important;
+	background: white;
+}
+.arrow p{
+	color: black;
+}
+
+.arrow:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #FFF;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.red{
+	background: #FF6F70;
+}
+.yellow{
+	background: #FCCF6B;
+}
+
+.comments{
+	width: 100%;
+	margin: 0 ;
+	display: flex;
+}
+
+.video{
+	background: #373737;
+	height: 48em;
+	position: relative;
+}
+
+.video video{
+ 	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	height: 75%;
+}
+
+#mapTop{
+	background: linear-gradient(90deg, #fbcf62 50%, #f3c95d 50%);
+	text-align: center;
+	height: 20em;
+	position: relative;
+}
+
+#mapTop h2{
+	color: white;
+	font-size:32px;
+	padding-top: 1em;
+}
+
+#mapTop h1{
+	border-style: solid;
+	border-width: 4px;
+	border-color: white;
+	font-size: 48px;
+	padding-top: 0.5em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	padding-bottom:  0.5em;
+}
+
+#mapTop:before {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #fbcf62;
+	border-right: none;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+#mapTop:after {
+	top: 100%;	
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #F3C95D;
+	border-left: none;
+	border-width: 30px;
+}
+
+.map img{
+	width: 100%;
 }
